@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "622324360838",
+    "firebase_url": "https://wildfire-5b96b.firebaseio.com",
+    "project_id": "wildfire-5b96b",
+    "storage_bucket": "wildfire-5b96b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622324360838:android:465d376fc9f1cd1b",
+        "android_client_info": {
+          "package_name": "com.sda.wildfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622324360838-grrt2qp3hhnh9475davms65hcnvhsg02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQtaHSQBwMbkxGwMji-Jlwh8dJ1-mqx_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622324360838-grrt2qp3hhnh9475davms65hcnvhsg02.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

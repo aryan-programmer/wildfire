@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wildfire/PaddedButton.dart';
 import 'package:wildfire/constants.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -33,28 +34,12 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               decoration: getInputDecoration("Enter your password..."),
             ),
-            SizedBox(height: 20),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
-              child: Material(
-                color: Colors.amberAccent,
-                borderRadius: BorderRadius.all(Radius.circular(30)),
-                elevation: 10,
-                child: MaterialButton(
-                  onPressed: () {
-                    // TODO:  Implement login functionality.
-                  },
-                  minWidth: 200,
-                  height: 50,
-                  child: Text(
-                    'Login',
-                    style: TextStyle(fontSize: 25),
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                ),
-              ),
+            SizedBox(height: 15),
+            PaddedButton(
+              'Login',
+              () {
+                // TODO:  Implement login functionality.
+              },
             ),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wildfire/PaddedButton.dart';
 import 'package:wildfire/constants.dart';
 import 'package:wildfire/screens/LoginScreen.dart';
 import 'package:wildfire/screens/RegistrationScreen.dart';
@@ -19,10 +20,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   void initState() {
     super.initState();
 
-    controller = AnimationController(
-      duration: Duration(seconds: 3),
-      vsync: this,
-    );
+    controller =
+        AnimationController(duration: Duration(seconds: 3), vsync: this);
 
     animation = CurvedAnimation(parent: controller, curve: Curves.easeInCubic);
     controller.forward();
@@ -61,43 +60,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               ],
             ),
             SizedBox(height: 40),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16),
-              child: Material(
-                elevation: 5,
-                color: Colors.amberAccent,
-                borderRadius: BorderRadius.circular(30),
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, LoginScreen.id);
-                  },
-                  minWidth: 200,
-                  height: 50,
-                  child: Text(
-                    'Login',
-                    style: TextStyle(fontSize: 25),
-                  ),
-                ),
-              ),
+            PaddedButton(
+              'Login',
+              () => Navigator.pushNamed(context, LoginScreen.id),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16),
-              child: Material(
-                color: Colors.amberAccent[400],
-                borderRadius: BorderRadius.circular(30),
-                elevation: 5,
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, RegistrationScreen.id);
-                  },
-                  minWidth: 200,
-                  height: 50,
-                  child: Text(
-                    'Register',
-                    style: TextStyle(fontSize: 25),
-                  ),
-                ),
-              ),
+            PaddedButton(
+              'Register',
+              () => Navigator.pushNamed(context, RegistrationScreen.id),
             ),
           ],
         ),
