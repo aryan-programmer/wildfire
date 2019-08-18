@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 const primaryColor = Colors.amber;
+const iconHeroTag = "Icon";
 
 Row getTitleRow(double sz) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
-      Image.asset(
-        "src/icon.png",
-        width: sz,
-        height: sz,
-      ),
-      Text(
-        'WildFire',
-        style: TextStyle(
-          fontSize: sz,
-        ),
-      ),
+      getIconHero(sz),
+      Text('WildFire', style: TextStyle(fontSize: sz, fontFamily: 'monospace')),
     ],
+  );
+}
+
+Hero getIconHero(double sz) {
+  return Hero(
+    tag: iconHeroTag,
+    child: Container(child: Image.asset("src/icon.png"), height: sz),
   );
 }
 

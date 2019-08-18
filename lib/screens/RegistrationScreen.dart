@@ -18,10 +18,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              height: 175,
-              child: Image.asset('src/icon.png'),
-            ),
+            getIconHero(175),
             SizedBox(height: 40),
             TextField(
               onChanged: (value) {
