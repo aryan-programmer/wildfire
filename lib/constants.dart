@@ -3,6 +3,13 @@ import 'package:flutter/material.dart';
 const primaryColor = Colors.amber;
 const iconHeroTag = "Icon";
 
+void showToast(GlobalKey<ScaffoldState> key, String msg) {
+  key.currentState.showSnackBar(SnackBar(
+    content: Text(msg),
+    duration: Duration(seconds: 5),
+  ));
+}
+
 Row getTitleRow(double sz) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
