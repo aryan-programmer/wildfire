@@ -30,7 +30,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              getIconHero(175),
+              Flexible(child: getIconHero(200)),
               SizedBox(height: 40),
               TextField(
                 keyboardType: TextInputType.emailAddress,

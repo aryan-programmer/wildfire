@@ -45,21 +45,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
                 opacity: animation.value,
               ),
-              height: animation.value * 320,
+              height: animation.value * 270,
             ),
             SizedBox(height: 45),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Container(child: Image.asset("src/icon.png"), height: 64),
+                Container(child: Image.asset("src/icon.png"), height: 60),
                 Text(
                   'WildFire',
-                  style: TextStyle(fontSize: 64),
+                  style: TextStyle(fontSize: 60),
                 ),
-                Container(child: Image.asset("src/icon.png"), height: 64)
               ],
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 30),
             PaddedButton(
               'Login',
               () => Navigator.pushNamed(context, LoginScreen.id),
