@@ -2,5 +2,4 @@
 
 # 🔥Wildfire🔥
 
-A fast communication &quot;chat&quot; application based on Google Firebase.
-
+A fast communication chat application developed using Google Firebase.
